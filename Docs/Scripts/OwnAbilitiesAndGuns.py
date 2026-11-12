@@ -65,17 +65,16 @@ def MeshComponent(BP):
 	return SubLib.get_object(SubLib.get_data(Handle))
 
 Guns = {}
-for Name, Mesh, Anim in (("Pistol", "/Other5Combat/Weapons/Pistol/Mesh/SK_Pistol", "/Other5Combat/Weapons/Pistol/Animations/ABP_Weap_Pistol"),
-		("Rifle", "/Other5Combat/Weapons/Rifle/Mesh/SK_Rifle", "/Other5Combat/Weapons/Rifle/Animations/ABP_Weap_Rifle"),
-		("Shotgun", "/Other5Combat/Weapons/Shotgun/Mesh/SKM_Shotgun", "/Other5Combat/Weapons/Shotgun/Animations/ABP_Weap_Shotgun")):
+for Name, Mesh, Anim in (("Pistol", "/Other5Combat/Weapons/Pistol/Mesh/SK_Pistol", ""),
+		("Rifle", "/Other5Combat/Weapons/Rifle/Mesh/SK_Rifle", ""),
+		("Shotgun", "/Other5Combat/Weapons/Shotgun/Mesh/SKM_Shotgun", "")):
 	# Each gun is its own Actor with its own Mesh component (no shared parent: setting a child's inherited component edits the parent's template).
 	BP = MakeBlueprint("/Other5Combat/Weapons/%s/BP_Other5%s" % (Name, Name), unreal.Actor)
 	Comp = MeshComponent(BP)
 	Comp.set_skeletal_mesh_asset(Load(Mesh))
-	AnimBP = Load(Anim)
-	if AnimBP:
-		Comp.set_editor_property("animation_mode", unreal.AnimationMode.ANIMATION_BLUEPRINT)
-		Comp.set_editor_property("anim_class", AnimBP.generated_class())
+	# No anim Blueprint: Lyra's ABP_Weap_* only held the reference pose (removed 2026-11-12, OwnWeaponEffects.py).
+	Comp.set_editor_property("anim_class", None)
+	Comp.set_editor_property("animation_mode", unreal.AnimationMode.ANIMATION_SINGLE_NODE)
 	unreal.BlueprintEditorLibrary.compile_blueprint(BP)
 	Lib.save_loaded_asset(BP, only_if_is_dirty=False)
 	Guns[Name] = BP

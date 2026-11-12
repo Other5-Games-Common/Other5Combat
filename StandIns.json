@@ -28,11 +28,6 @@
                          "Source":  "Lyra"
                      },
                      {
-                         "Package":  "/Other5Combat/Audio/Blueprints/WeaponAudioMacros",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Audio/Classes/Application_Focused",
                          "Class":  "SoundClass",
                          "Source":  "Lyra"
@@ -368,33 +363,8 @@
                          "Source":  "Lyra"
                      },
                      {
-                         "Package":  "/Other5Combat/Characters/Heroes/Abilities/AN_Melee",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Characters/Heroes/Abilities/AN_Reload",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Characters/Heroes/Animations/Actions/AM_MM_Pistol_Melee",
                          "Class":  "AnimMontage",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Blueprints/B_WeaponDecals",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Blueprints/B_WeaponFire",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Blueprints/B_WeaponImpacts",
-                         "Class":  "Blueprint",
                          "Source":  "Lyra"
                      },
                      {
@@ -468,19 +438,9 @@
                          "Source":  "ElectricDreams,Lyra"
                      },
                      {
-                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_SpriteNormal",
-                         "Class":  "MaterialFunction",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_SpriteOpacity",
                          "Class":  "MaterialFunction",
                          "Source":  "ElectricDreams,Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_SpriteParallax",
-                         "Class":  "MaterialFunction",
-                         "Source":  "Lyra"
                      },
                      {
                          "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_TextureChannelSelect",
@@ -499,11 +459,6 @@
                      },
                      {
                          "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_TextureOpacity",
-                         "Class":  "MaterialFunction",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_TextureParallax",
                          "Class":  "MaterialFunction",
                          "Source":  "Lyra"
                      },
@@ -543,42 +498,7 @@
                          "Source":  "Lyra"
                      },
                      {
-                         "Package":  "/Other5Combat/Effects/Materials/Decals/Instances/MI_Decal_Concrete",
-                         "Class":  "MaterialInstanceConstant",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Materials/Decals/Instances/MI_Decal_Transparent_Glass",
-                         "Class":  "MaterialInstanceConstant",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Materials/Decals/M_Decal_Base",
-                         "Class":  "Material",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Materials/Decals/M_Decal_Transparent_Base",
-                         "Class":  "Material",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Effects/Materials/Decals/M_ExplosionDecal",
-                         "Class":  "Material",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Materials/Decals/M_GlassBulletHoles_Decal",
-                         "Class":  "Material",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_BasicBulletCasing",
-                         "Class":  "Material",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_BasicShotgunBulletCasing",
                          "Class":  "Material",
                          "Source":  "Lyra"
                      },
@@ -599,11 +519,6 @@
                      },
                      {
                          "Package":  "/Other5Combat/Effects/Materials/Meshes/M_FX_Hardsurface_Masked",
-                         "Class":  "Material",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_FX_Hardsurface_Transparent",
                          "Class":  "Material",
                          "Source":  "Lyra"
                      },
@@ -675,16 +590,6 @@
                      {
                          "Package":  "/Other5Combat/Effects/Materials/Tracers/M_TracerSmoke_Base",
                          "Class":  "Material",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Meshes/BulletShells/SM_rifleshell",
-                         "Class":  "StaticMesh",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Meshes/BulletShells/SM_shotgunshell",
-                         "Class":  "StaticMesh",
                          "Source":  "Lyra"
                      },
                      {
@@ -778,21 +683,6 @@
                          "Source":  "Lyra"
                      },
                      {
-                         "Package":  "/Other5Combat/Effects/Particles/Impacts/NS_ImpactDecals",
-                         "Class":  "NiagaraSystem",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Particles/Impacts/NS_ImpactGlass",
-                         "Class":  "NiagaraSystem",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Particles/Impacts/NS_ImpactSparksCharacter",
-                         "Class":  "NiagaraSystem",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Effects/Particles/Lighting/Emitters/NE_ParticleLight",
                          "Class":  "NiagaraEmitter",
                          "Source":  "Lyra"
@@ -813,32 +703,12 @@
                          "Source":  "Lyra"
                      },
                      {
-                         "Package":  "/Other5Combat/Effects/Particles/Weapons/Emitters/NE_MuzzleFlashStarBurst",
-                         "Class":  "NiagaraEmitter",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire",
                          "Class":  "NiagaraSystem",
                          "Source":  "Lyra"
                      },
                      {
-                         "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire_MuzzleFlash_Rifle",
-                         "Class":  "NiagaraSystem",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire_ShellEject",
-                         "Class":  "NiagaraSystem",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire_Tracer",
-                         "Class":  "NiagaraSystem",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire_Tracer_Shotgun",
                          "Class":  "NiagaraSystem",
                          "Source":  "Lyra"
                      },
@@ -859,26 +729,6 @@
                      },
                      {
                          "Package":  "/Other5Combat/Effects/Textures/Decals/T_ExplsionDigital",
-                         "Class":  "Texture2D",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Textures/Decals/concrete_depth2x2",
-                         "Class":  "Texture2D",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Textures/Decals/concrete_normal2x2",
-                         "Class":  "Texture2D",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Textures/Decals/glass_mask2x2",
-                         "Class":  "Texture2D",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Effects/Textures/Decals/glass_normal2x2",
                          "Class":  "Texture2D",
                          "Source":  "Lyra"
                      },
@@ -945,26 +795,6 @@
                      {
                          "Package":  "/Other5Combat/Effects/Textures/Rocks/ultkedqjw_4K_Roughness",
                          "Class":  "Texture2D",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Feedback/CameraShakes/CS_Weapon_Fire_Pistol",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Feedback/CameraShakes/CS_Weapon_Fire_Rifle",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Feedback/CameraShakes/CS_Weapon_Fire_Shotgun",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Feedback/Haptics/FFE_Weapon_Fire",
-                         "Class":  "ForceFeedbackEffect",
                          "Source":  "Lyra"
                      },
                      {
@@ -1060,46 +890,6 @@
                      {
                          "Package":  "/Other5Combat/Input/Actions/IA_Weapon_Reload",
                          "Class":  "InputAction",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_BaseInstance",
-                         "Class":  "MaterialInstanceConstant",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_CrossHair_Pistol",
-                         "Class":  "MaterialInstanceConstant",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_CrossHair_Rifle",
-                         "Class":  "MaterialInstanceConstant",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_CrossHair_Shotgun",
-                         "Class":  "MaterialInstanceConstant",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_TargetDot_FourSpread",
-                         "Class":  "MaterialInstanceConstant",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_TargetDot_Single",
-                         "Class":  "MaterialInstanceConstant",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/UI/Hud/Art/M_UI_Base_ReticleBuilder",
-                         "Class":  "Material",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Weapons/B_Weapon",
-                         "Class":  "Blueprint",
                          "Source":  "Lyra"
                      },
                      {
@@ -1218,11 +1008,6 @@
                          "Source":  "Lyra"
                      },
                      {
-                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/ABP_Weap_Pistol",
-                         "Class":  "AnimBlueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Weapons/Pistol/Animations/AM_MM_Pistol_Equip",
                          "Class":  "AnimMontage",
                          "Source":  "Lyra"
@@ -1255,11 +1040,6 @@
                      {
                          "Package":  "/Other5Combat/Weapons/Pistol/Animations/Weap_Pistol_Reload",
                          "Class":  "AnimSequence",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Weapons/Pistol/GCN_Weapon_Pistol_Fire",
-                         "Class":  "Blueprint",
                          "Source":  "Lyra"
                      },
                      {
@@ -1313,16 +1093,6 @@
                          "Source":  "Lyra,Template"
                      },
                      {
-                         "Package":  "/Other5Combat/Weapons/Pistol/W_Reticle_Pistol1",
-                         "Class":  "WidgetBlueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/ABP_Weap_Rifle",
-                         "Class":  "AnimBlueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Weapons/Rifle/Animations/AM_MM_Rifle_Equip",
                          "Class":  "AnimMontage",
                          "Source":  "Lyra"
@@ -1355,16 +1125,6 @@
                      {
                          "Package":  "/Other5Combat/Weapons/Rifle/Animations/Weap_Rifle_Reload",
                          "Class":  "AnimSequence",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Weapons/Rifle/B_Rifle",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Weapons/Rifle/GCN_Weapon_Rifle_Fire",
-                         "Class":  "Blueprint",
                          "Source":  "Lyra"
                      },
                      {
@@ -1413,11 +1173,6 @@
                          "Source":  "Lyra"
                      },
                      {
-                         "Package":  "/Other5Combat/Weapons/Shotgun/Animations/ABP_Weap_Shotgun",
-                         "Class":  "AnimBlueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
                          "Package":  "/Other5Combat/Weapons/Shotgun/Animations/AM_MM_Shotgun_Fire",
                          "Class":  "AnimMontage",
                          "Source":  "Lyra"
@@ -1445,16 +1200,6 @@
                      {
                          "Package":  "/Other5Combat/Weapons/Shotgun/Animations/Weap_Shotgun_Reload",
                          "Class":  "AnimSequence",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Weapons/Shotgun/B_Shotgun",
-                         "Class":  "Blueprint",
-                         "Source":  "Lyra"
-                     },
-                     {
-                         "Package":  "/Other5Combat/Weapons/Shotgun/GCN_Weapon_Shotgun_Fire",
-                         "Class":  "Blueprint",
                          "Source":  "Lyra"
                      },
                      {
