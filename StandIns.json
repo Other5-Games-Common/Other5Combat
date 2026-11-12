@@ -1,0 +1,2411 @@
+﻿{
+    "Version":  1,
+    "Plugin":  "Other5Combat",
+    "StandIns":  [
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Amb_Pad",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Default",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "ElectricDreams,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_FX_GrenadeBounce",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_FX_Pad",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Foley",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Footstep_NPC",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Footstep_PC",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Grenade",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Melee",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Pistol",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Projectile",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Rifle",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_Shotgun",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/AttenuationPresets/ATT_WhizBy",
+                         "Class":  "SoundAttenuation",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Blueprints/B_MusicManagerComponent_Base",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Blueprints/B_MusicManagerComponent_FE",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Blueprints/WeaponAudioMacros",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Classes/Application_Focused",
+                         "Class":  "SoundClass",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Classes/Music",
+                         "Class":  "SoundClass",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Classes/Overall",
+                         "Class":  "SoundClass",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Classes/RenderedCinematics",
+                         "Class":  "SoundClass",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Classes/SFX",
+                         "Class":  "SoundClass",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Classes/UI",
+                         "Class":  "SoundClass",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Classes/VoiceChat",
+                         "Class":  "SoundClass",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Concurrency/SCON_Footsteps",
+                         "Class":  "SoundConcurrency",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Concurrency/SCON_Guns_LimitToOwner",
+                         "Class":  "SoundConcurrency",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Concurrency/SCON_Guns_StopFarthest",
+                         "Class":  "SoundConcurrency",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Concurrency/SCON_WhizBys",
+                         "Class":  "SoundConcurrency",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Effects/SubmixEffects/CREV_1978_LargeRoom",
+                         "Class":  "SubmixEffectConvolutionReverbPreset",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Effects/SubmixEffects/FLT_EarlyReflections",
+                         "Class":  "SubmixEffectFilterPreset",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Effects/SubmixEffects/FLT_EarlyReflectionsHPF",
+                         "Class":  "SubmixEffectFilterPreset",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Effects/SubmixEffects/TAP_EarlyReflections",
+                         "Class":  "SubmixEffectTapDelayPreset",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Impulses/1978_LargeRoom_IR",
+                         "Class":  "AudioImpulseResponse",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_DovetailClip",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_DovetailClipFromArray",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_RandInterpTo",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_RandPanStereo",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_StereoBalance",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_TriggerAfter",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_TriggerEvery",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_TriggerModulo",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_TriggerStopAfter",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/lib_WhizBy",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/mx_PlayAmbientChord",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/mx_PlayAmbientElement",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/MetaSounds/mx_Stingers",
+                         "Class":  "MetaSoundPatch",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_06",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_07",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_08",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_09",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Foley/SFX_Footstep_BaseLayer_10",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/SFX/Text_Pop",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_DryClick_nl_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_DryClick_nl_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_DryClick_nl_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_DryClick_nl_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_DryClick_nl_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_MainLayer_nl_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_MainLayer_nl_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_MainLayer_nl_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_MainLayer_nl_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_MainLayer_nl_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_MainLayer_nl_06",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_MainLayer_nl_07",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_SecondaryLayer_nl_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_SecondaryLayer_nl_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_SecondaryLayer_nl_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Pistol_SecondaryLayer_nl_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_DryClick_nl_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_DryClick_nl_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_DryClick_nl_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_DryClick_nl_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_DryClick_nl_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_MainLayer_nl_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_MainLayer_nl_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_MainLayer_nl_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_MainLayer_nl_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_MainLayer_nl_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_MainLayer_nl_06",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_SecondaryLayer_nl_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_SecondaryLayer_nl_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_SecondaryLayer_nl_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_SecondaryLayer_nl_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/SoundWaves/Weapons/sfx_Weapon_Shotgun_SecondaryLayer_nl_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Explosions/Explosions_Grenade_Punch-Close_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Explosions/Explosions_Grenade_Punch-Close_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Explosions/Explosions_Grenade_Punch-Close_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Explosions/Explosions_Grenade_Punch-Close_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Explosions/Explosions_Grenade_Punch-Close_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Explosions/Explosions_Grenade_Punch-Close_06",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Grenade/grenade_bounce_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Grenade/grenade_bounce_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Grenade/grenade_bounce_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Grenade/grenade_bounce_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Grenade/grenade_bounce_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_ImpactPlaster_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_ImpactPlaster_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_ImpactPlaster_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_ImpactPlaster_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_ImpactPlaster_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_Plyr_BulletImpact_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_Plyr_BulletImpact_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_Plyr_BulletImpact_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_Plyr_BulletImpact_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_Plyr_BulletImpact_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Impacts/Lyra_Plyr_BulletImpact_06",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Pistol/Weapons_Pistol_ClipIn_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Pistol/Weapons_Pistol_ClipOut_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_Bolt_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_ClipIn_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_ClipOut_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_Punch-Close_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_Punch-Close_02",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_Punch-Close_03",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_Punch-Close_04",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_Punch-Close_05",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_Punch-Close_06",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Rifle/Weapons_Rifle_Punch-Close_07",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Sounds/Weapons/Shotgun/Weapons_Shotgun_ClipIn_01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Submixes/EarlyReflectionsSubmix",
+                         "Class":  "SoundSubmix",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Submixes/MainSubmix",
+                         "Class":  "SoundSubmix",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Submixes/MusicSubmix",
+                         "Class":  "SoundSubmix",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Submixes/ReverbSubmix",
+                         "Class":  "SoundSubmix",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Submixes/SFXSubmix",
+                         "Class":  "SoundSubmix",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Submixes/SendEffectSubmix",
+                         "Class":  "SoundSubmix",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Submixes/UISubmix",
+                         "Class":  "SoundSubmix",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Audio/Submixes/VoiceSubmix",
+                         "Class":  "SoundSubmix",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/BP_Character_Default",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Cameras/ThirdPersonDeathOffsetCurve",
+                         "Class":  "CurveVector",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Cameras/ThirdPersonOffsetCurve",
+                         "Class":  "CurveVector",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Abilities/AN_Melee",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Abilities/AN_Reload",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Abilities/GA_AbilityWithWidget1",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Abilities/GA_Hero_Heal1",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Abilities/GA_Hero_Jump1",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Abilities/W_CrouchTouchButton",
+                         "Class":  "WidgetBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Abilities/W_JumpTouchButton",
+                         "Class":  "WidgetBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Animations/Actions/AM_MM_Pistol_Melee",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Animations/Actions/AM_MM_Rifle_Melee",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/Animations/Actions/AM_MM_Shotgun_Melee",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Characters/Heroes/BP_Hero_Default",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Blueprints/B_FootStep",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Blueprints/B_WeaponDecals",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Blueprints/B_WeaponFire",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Blueprints/B_WeaponImpacts",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Curves/FX_Pyro",
+                         "Class":  "CurveLinearColorAtlas",
+                         "Source":  "ElectricDreams,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Curves/FX_Pyro_Fire",
+                         "Class":  "CurveLinearColor",
+                         "Source":  "ElectricDreams,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Curves/FX_Pyro_Fire_2",
+                         "Class":  "CurveLinearColor",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Curves/FX_Pyro_Fire_3",
+                         "Class":  "CurveLinearColor",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Curves/FX_Pyro_Sparks",
+                         "Class":  "CurveLinearColor",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/EffectTypes/EffectType_Weapon_Impacts",
+                         "Class":  "NiagaraEffectType",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/EffectTypes/EffectType_World_Burst",
+                         "Class":  "NiagaraEffectType",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/EffectTypes/EffectType_World_Placeable",
+                         "Class":  "NiagaraEffectType",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Material/MI_WeaponSpawnerTimerIndicator",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Material/M_Launcher",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Material/M_Launcher_Inst4",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Material/M_WeaponSpawnTimerIndicator",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_AngleFade",
+                         "Class":  "MaterialFunction",
+                         "Source":  "ElectricDreams,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_AnimatedSquareTexture",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_ChannelRemap",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_ChannelRemapRGB",
+                         "Class":  "MaterialFunction",
+                         "Source":  "ElectricDreams,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_DepthFade",
+                         "Class":  "MaterialFunction",
+                         "Source":  "ElectricDreams,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_MotionStretch",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_NearDistanceFade",
+                         "Class":  "MaterialFunction",
+                         "Source":  "ElectricDreams,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_RotateVector2",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_SpriteDiffuse",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_SpriteEmissive",
+                         "Class":  "MaterialFunction",
+                         "Source":  "ElectricDreams,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_SpriteNormal",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_SpriteOpacity",
+                         "Class":  "MaterialFunction",
+                         "Source":  "ElectricDreams,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_SpriteParallax",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_SpriteUV",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_TextureChannelSelect",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_TextureDiffuse",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_TextureEmissive",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_TextureOpacity",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_TextureParallax",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/MaterialFunctions/MF_TracerSmokeOpacity",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/BlastGraphics/M_Grenade_Blast",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/BlastGraphics/M_Grenade_EX_Flare",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/BlastGraphics/M_Grenade_GraphicsTrail_1",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/BlastGraphics/M_Grenade_GraphicsTrail_2",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/BlastGraphics/M_Grenade_GraphicsTrail_3",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/BlastGraphics/M_ParticleBlast",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Decals/Instances/MI_Decal_Concrete",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Decals/Instances/MI_Decal_Transparent_Glass",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Decals/M_Decal_Base",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Decals/M_Decal_Transparent_Base",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Decals/M_ExplosionDecal",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Decals/M_GlassBulletHoles_Decal",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/FootSteps/Instances/MI_Flipbook_Pyro_PuffSmoke",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/FootSteps/Instances/MI_FootStepDecal_All",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/FootSteps/Instances/MI_FootStepDecal_Glass",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/FootSteps/M_Flipbook_Pyro_Lit",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/FootSteps/M_FootStepDecal_Base",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_BasicBulletCasing",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_BasicShotgunBulletCasing",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_DebrisChunks_1",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_DebrisChunks_2",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_DebrisChunks_3",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_FX_Hardsurface_Masked",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Meshes/M_FX_Hardsurface_Transparent",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/MuzzleFlash/Instances/MI_Flipbook_MuzzleFlash_Front",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/MuzzleFlash/Instances/MI_Flipbook_MuzzleFlash_Side",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/MuzzleFlash/M_Flipbook_MuzzleFlash_Base",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/PickUp/Instances/M_GunPickup_RingMeshNoFade",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/PickUp/M_GunPad_Pixels",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/PickUp/M_GunPickup_RingMesh",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/PickUp/M_GunPickup_Rings",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/PickUp/M_Pad_Beam",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/PickUp/M_Pad_Graphics_Diffus_Core",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/PickUp/M_Pads_CubeTrails",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/PostProcess/MPP_Outline",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/PostProcess/MPP_Outline_Inst",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Pyro/Instances/MI_Flipbook_Pyro_Diffuse_ImpactSmoke",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Pyro/Instances/MI_Flipbook_Pyro_Diffuse_MuzzleFlashSmoke",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Pyro/Instances/MI_Flipbook_Pyro_Grenade",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Pyro/M_Flipbook_Pyro_Base",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Sparks/Instances/MI_Sparks_Dust",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Sparks/Instances/MI_Sparks_Metal",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Sparks/M_Sparks_Base",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Tracers/Instances/MI_TracerSmoke_Default",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Tracers/Instances/MI_Tracers_Default",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Tracers/M_TracerCore_Base",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Materials/Tracers/M_TracerSmoke_Base",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/BulletShells/SM_pistolshell",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/BulletShells/SM_rifleshell",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/BulletShells/SM_shotgunshell",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/Cube",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/Rocks/Debris_Chunk1",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/Rocks/Debris_Chunk2",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/Rocks/Debris_Chunk3",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/Rocks/ultkedqjw_LOD7",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/box",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Meshes/ring",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/NiagaraModules/NM_FootPrintSizeAndOrientation",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/NiagaraModules/NM_ImpactSpawnAttributes",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/NiagaraModules/NM_ParticleLight",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/NiagaraModules/NM_SubImageIndexVariants",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/NiagaraModules/NM_WeaponTrigger",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Explosion/NS_Grenade_Explosion",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Explosion/NS_Grenade_Trail",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Footsteps/NS_Footsteps",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/Emitters/NE_DustyFlipbook",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/Emitters/NE_ImpactCone",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/Emitters/NE_ImpactCore",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/Emitters/NE_ImpactParticleLight",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/Emitters/NE_ImpactSparks",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/Emitters/NE_Rocks",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/NS_ImpactConcrete",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/NS_ImpactDecals",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/NS_ImpactGlass",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Impacts/NS_ImpactSparksCharacter",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Item/Emitters/NE_RingMeshTimer",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Item/NS_GunPad",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Item/NS_GunPad_Loading",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Lighting/Emitters/NE_ParticleLight",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Weapons/Emitters/NE_MuzzleFlashCards",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Weapons/Emitters/NE_MuzzleFlashSmoke",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Weapons/Emitters/NE_MuzzleFlashSparks",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Weapons/Emitters/NE_MuzzleFlashStarBurst",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire_MuzzleFlash_Rifle",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire_ShellEject",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire_Tracer",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Particles/Weapons/NS_WeaponFire_Tracer_Shotgun",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/BlastGraphics/T_ExplosionFlare",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/BlastGraphics/T_Graphics",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Cutouts/T_cutout_gradient_vertical",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Decals/T_ExplosionDecal",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Decals/T_ExplsionDigital",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Decals/concrete_depth2x2",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Decals/concrete_normal2x2",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Decals/glass_mask2x2",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Decals/glass_normal2x2",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Flipbooks/LDR_Squib_2_rop_comp1_0001_flipbook",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Flipbooks/SmokeSwirl_3_Flipbook_CHANNELPACK",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Flipbooks/T_Explosion_Areal_E64",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/FootPrint/T_FootPrint_01_MSK",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/FootPrint/T_FootPrint_01_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/General/T_Inky_Smoke_Tile",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:ParagonCountess,Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/General/textureNoise",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/MuzzleFlash/T_MuzzleFlash_Directional_01_MSK",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Rocks/Debris_Chunk1_BaseColor",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Rocks/Debris_Chunk2_BaseColor",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Rocks/Debris_Chunk3_BaseColor",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Rocks/WhiteSquareTexture",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Rocks/ultkedqjw_4K_Albedo",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Rocks/ultkedqjw_4K_Normal_LOD0",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/Rocks/ultkedqjw_4K_Roughness",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Environments/B_LoadRandomLobbyBackground",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Environments/Gameplay/GE_GameplayEffectPad_Heal",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Experiences/Phases/GE_DamageImmunity_FromGameMode",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Feedback/CameraShakes/CS_Weapon_Fire_Pistol",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Feedback/CameraShakes/CS_Weapon_Fire_Rifle",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Feedback/CameraShakes/CS_Weapon_Fire_Shotgun",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Feedback/Haptics/FFE_Weapon_Fire",
+                         "Class":  "ForceFeedbackEffect",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/B_SpawnShooterReplayHUD",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Dash/GA_Hero_Dash1",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Dash/W_DashCooldown",
+                         "Class":  "WidgetBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Dash/W_DashTouchButton",
+                         "Class":  "WidgetBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Emote/GA_Emote1",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Emote/W_EmoteTouchButton",
+                         "Class":  "WidgetBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Melee/GA_Melee1",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Melee/W_MeleeTouchButton",
+                         "Class":  "WidgetBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Respawn/GA_SpawnEffect1",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Respawn/GE_SpawnIn",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Game/Respawn/W_RespawnTimer",
+                         "Class":  "WidgetBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/GameplayEffects/Damage/GE_Damage_Basic_Instant",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/GameplayEffects/Damage/GameplayEffectParent_Damage_Basic",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/GameplayEffects/GE_HeroDash_Cooldown",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/GameplayEffects/GE_IsPlayer",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/GameplayEffects/Heal/GE_Heal_Periodic",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/GameplayEffects/Heal/GameplayEffectParent_Heal",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Abilities/GA_ADS1",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Abilities/GA_DropWeapon1",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Abilities/Struct_UIMessaging",
+                         "Class":  "UserDefinedStruct",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_ADS",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Ability_Dash",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Ability_Heal",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_AutoRun",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Crouch",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Emote",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Grenade",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Interact",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Jump",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Look_Mouse",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Look_Stick",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Melee",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Move",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_QuickSlot1",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_QuickSlot2",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_QuickSlot3",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_QuickSlot_CycleBackward",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_QuickSlot_CycleForward",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Weapon_Fire",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Weapon_Fire_Auto",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Actions/IA_Weapon_Reload",
+                         "Class":  "InputAction",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Mappings/C_AimAssistTargetWeightCurve",
+                         "Class":  "CurveFloat",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Input/Mappings/IMC_ADS_Speed",
+                         "Class":  "InputMappingContext",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/System/Audio/WeaponAudioFunctions",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/System/FrontEnd/B_LyraFrontEnd_Experience",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/System/FrontEnd/Maps/L_LyraFrontEnd",
+                         "Class":  "World",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/System/FrontEnd/T_UI_BackdropPlaceholder_Mat",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/DT_UniversalActions",
+                         "Class":  "DataTable",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_BaseInstance",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_CrossHair_Pistol",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_CrossHair_Rifle",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_CrossHair_Shotgun",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_EliminationMarker",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_HitMarker",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_HitMarkerConfirmation",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_HitMarkerConfirmation_Critical",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_Outer_Pistol",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_Outer_Rifle",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_Outer_Shotgun",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_TargetDot_FourSpread",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/MI_UI_Reticles_TargetDot_Single",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/UI/Hud/Art/M_UI_Base_ReticleBuilder",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/B_Weapon",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/GE_Damage_Melee",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Materials/MI_InternalShapeGlow2_NoPattern",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Materials/MI_InternalShapeGlow_MinorPattern",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Materials/MI_InternalShapeGlow_NoPattern",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Materials/M_Glass",
+                         "Class":  "Material",
+                         "Source":  "Fab:Dungeon,Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Materials/M_InternalShapeGlow",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Materials/M_Item",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Materials/M_Weapon",
+                         "Class":  "Material",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Textures/T_NoiseSpeckle_01",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Textures/T_SoftNoise",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Textures/T_Weapon_AORM",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Textures/T_Weapon_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Textures/T_Weapon_Mask",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Textures/T_Weapon_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Generic/Textures/T_vk1iehhc_4K_Roughness",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Grenade/Material/MI_Weapon_Grenade",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Grenade/Mesh/SM_grenade",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Grenade/Textures/T_Grenade_AORM",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Grenade/Textures/T_Grenade_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Grenade/Textures/T_Grenade_Masks",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Grenade/Textures/T_Grenade_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Material/MI_Item_HealthPackFull",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Material/MI_Item_HealthPackPart",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Mesh/SM_healthpackFull",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Mesh/SM_healthpackPart",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Texture/T_HealthPackFull_AORM",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Texture/T_HealthPackFull_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Texture/T_HealthPackFull_Mask",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Texture/T_HealthPackFull_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Texture/T_HealthPackPart_AORM",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Texture/T_HealthPackPart_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Texture/T_HealthPackPart_Mask",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Healthpack/Texture/T_HealthPackPart_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/NetShooter_PROTO/B_NetShooter",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/NetShooter_PROTO/ID_NetShooter",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/NetShooter_PROTO/WID_NetShooter",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/ABP_Weap_Pistol",
+                         "Class":  "AnimBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/AM_MM_Pistol_DryFire",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/AM_MM_Pistol_Equip",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/AM_MM_Pistol_Fire",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/AM_MM_Pistol_Reload",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/AM_Weap_Pistol_Fire",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/AM_Weap_Pistol_Reload",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/Weap_Pistol_Fire",
+                         "Class":  "AnimSequence",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Animations/Weap_Pistol_Reload",
+                         "Class":  "AnimSequence",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/B_Pistol",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/GCN_Weapon_Pistol_Fire",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/GE_Damage_Pistol",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/ID_Pistol",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Materials/MI_Weapon_Pistol",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Mesh/SK_Pistol",
+                         "Class":  "SkeletalMesh",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Mesh/SK_Pistol_PhysicsAsset",
+                         "Class":  "PhysicsAsset",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Mesh/SK_Pistol_Skeleton",
+                         "Class":  "Skeleton",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Mesh/SM_Pistol",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Mesh/SM_Pistol_Magazine",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Textures/T_Pistol_AORM",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Textures/T_Pistol_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Textures/T_Pistol_Masks",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/Textures/T_Pistol_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/WID_Pistol",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Pistol/W_Reticle_Pistol1",
+                         "Class":  "WidgetBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/ABP_Weap_Rifle",
+                         "Class":  "AnimBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/AM_MM_Rifle_DryFire",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/AM_MM_Rifle_Equip",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/AM_MM_Rifle_Fire",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/AM_MM_Rifle_Reload",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/AM_Weap_Rifle_Fire",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/AM_Weap_Rifle_Reload",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/Weap_Rifle_Fire",
+                         "Class":  "AnimSequence",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Animations/Weap_Rifle_Reload",
+                         "Class":  "AnimSequence",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/B_Rifle",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/GCN_Weapon_Rifle_Fire",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/GE_Damage_RifleAuto",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/ID_Rifle",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Materials/MI_Weapon_Rifle",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Mesh/SK_Rifle",
+                         "Class":  "SkeletalMesh",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Mesh/SK_Rifle_PhysicsAsset",
+                         "Class":  "PhysicsAsset",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Mesh/SK_Rifle_Skeleton",
+                         "Class":  "Skeleton",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Mesh/SM_Rifle",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra,Template"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Sounds/Rifle_Load01",
+                         "Class":  "SoundWave",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Textures/T_Rifle_AORM",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Textures/T_Rifle_Combined_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Textures/T_Rifle_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/Textures/T_Rifle_Masks",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Rifle/WID_Rifle",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Animations/ABP_Weap_Shotgun",
+                         "Class":  "AnimBlueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Animations/AM_MM_Shotgun_Fire",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Animations/AM_MM_Shotgun_Reload",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Animations/AM_Weap_Shotgun_Fire",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Animations/AM_Weap_Shotgun_Reload",
+                         "Class":  "AnimMontage",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Animations/Weap_Shotgun_Fire",
+                         "Class":  "AnimSequence",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Animations/Weap_Shotgun_Reload",
+                         "Class":  "AnimSequence",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/B_Shotgun",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/GCN_Weapon_Shotgun_Fire",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/GE_Damage_Shotgun",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/ID_Shotgun",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Materials/MI_Weapon_Shotgun",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Mesh/SKM_Shotgun",
+                         "Class":  "SkeletalMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Mesh/SK_Shotgun_PhysicsAsset",
+                         "Class":  "PhysicsAsset",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Mesh/SK_Shotgun_Skeleton",
+                         "Class":  "Skeleton",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Mesh/SM_Shotgun",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Texture/T_Shotgun_AORM",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Texture/T_Shotgun_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Texture/T_Shotgun_Mask",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/Texture/T_Shotgun_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Shotgun/WID_Shotgun",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Spawnpad/Material/MI_InternalShapeGlow",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Spawnpad/Material/MI_InternalShapeGlow_Circle",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Spawnpad/Material/MI_InternalShapeGlow_Hex",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Spawnpad/Material/MI_InternalShapeGlow_Square",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Spawnpad/Material/M_MetalChroma_LaunchPad",
+                         "Class":  "Material",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Spawnpad/Mesh/SM_launchpad_Hex",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Spawnpad/Mesh/SM_launchpad_Round",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Spawnpad/Mesh/SM_launchpad_Square",
+                         "Class":  "StaticMesh",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Spawnpad/Texture/T_LaunchPadShape",
+                         "Class":  "Texture2D",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/Tests/GE_HugeHealthTarget",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Weapons/WID_InstantHeal",
+                         "Class":  "Blueprint",
+                         "Source":  "Lyra"
+                     }
+                 ]
+}
