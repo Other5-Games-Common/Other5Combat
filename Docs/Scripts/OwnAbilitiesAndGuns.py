@@ -44,7 +44,7 @@ Actions = "/Other5Characters/Mannequin/Animations/Actions/"
 
 # ---- Abilities
 Dash = MakeBlueprint("/Other5Combat/Characters/Abilities/BP_Other5Dash", unreal.Other5DashAbility)
-Defaults(Dash, {"strength": 1850.0, "push_seconds": 0.25, "seconds": 0.55,
+Defaults(Dash, {"distance": 500.0, "push_seconds": 0.25, "end_speed": 600.0, "seconds": 0.55, "cooldown_seconds": 1.5,
 	"forward_montage": Load(Actions + "AM_MM_Dash_Forward"), "back_montage": Load(Actions + "AM_MM_Dash_Backward"),
 	"left_montage": Load(Actions + "AM_MM_Dash_Left"), "right_montage": Load(Actions + "AM_MM_Dash_Right")})
 Melee = MakeBlueprint("/Other5Combat/Characters/Abilities/BP_Other5Melee", unreal.Other5MeleeAbility)
