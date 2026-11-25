@@ -1,11 +1,611 @@
 ﻿{
-    "Version": 1,
-    "Plugin": "Other5Combat",
-    "StandIns": [
-        {
-            "Package": "/Other5Combat/Effects/Textures/General/T_Inky_Smoke_Tile",
-            "Class": "Texture2D",
-            "Source": "Fab:ParagonCountess"
-        }
-    ]
+    "Version":  1,
+    "Plugin":  "Other5Combat",
+    "StandIns":  [
+                     {
+                         "Package":  "/Other5Combat/Effects/Textures/General/T_Inky_Smoke_Tile",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:ParagonCountess"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Demo/Materials/BG_Grid_Mat",
+                         "Class":  "Material",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Demo/Materials/BG_inst4",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Demo/Textures/Grid_Tex",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Demo/Textures/desert",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Distortion/Distortion_Mat_Inst2",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Etc/0_DotCircle_Mat_Inst",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Etc/Flame_Inst",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Etc/debris_car",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Explosion/blackbody_exp_Mat_Inst",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Explosion/blackbody_exp_Mat_Inst2",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Explosion/blackbody_exp_Mat_Inst3",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Explosion/blackbody_exp_Mat_Inst4",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Fire_Inst/bigfireB_fwd_Inst",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Fireloop_Inst/BoneFire2_Inst",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Fireloop_Inst/BoneFire_Inst",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Master/0_DotCircle_Mat",
+                         "Class":  "Material",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Master/Basic_Emi_Mat",
+                         "Class":  "Material",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Master/Debris_Mat",
+                         "Class":  "Material",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Master/Distortion_Mat",
+                         "Class":  "Material",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Master/Sequence_Mat",
+                         "Class":  "Material",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Master/Smoke1_Mat",
+                         "Class":  "Material",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Master/blackbody_exp_Mat",
+                         "Class":  "Material",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Materials/Smoke_Inst/1_6_smoke2_1_Inst",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Niagara/Explosion/NFire_Exp_00",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Niagara/Fire/NFire_Grd_00",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Niagara/Fire_for_BP/NFire_BP_02",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Niagara/NM_CascadeConversion_SolveOrbit",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Niagara/NM_DefaultVelocity",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Niagara/NM_OnlySizeScale",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Niagara/NM_Scale",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Niagara/ScaledLightRadius",
+                         "Class":  "NiagaraScript",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Props/Meshes/debris/c_debris_01",
+                         "Class":  "StaticMesh",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/CandleFire/CandleFire_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Fire/bigfireB_fwd",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Fire/blowingFireB_fwd",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Fire/blowingFire_fwd",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Fire/blowingFire_fwd2",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Fireloop/bonefire",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Fireloop/bonefire2",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Flow/Circle_normal",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Flow/EmberNoise3",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Flow/Flame",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/Flow/disort_test2",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/firesingle/bigfire_single",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/smoke/0_6_smoke",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/smoke/0_6_smoke_re_vg",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/M5VFXVOL2/Textures/smoke/1_6_smoke2_1",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:M5VFXVOL2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/EffectTypes/NET_Gameplay_Burst",
+                         "Class":  "NiagaraEffectType",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Explosions/CameraShake/CS_Explosion_01",
+                         "Class":  "Blueprint",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Explosions/Emitters/NE_Debris",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Explosions/Emitters/NE_Explosion",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Explosions/Emitters/NE_GroundDust",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Explosions/Emitters/NE_PostProcess",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Explosions/Emitters/NE_SparkDebris",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Explosions/NS_Explosion_Small",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Sparks/Emitters/NE_SecondarySparks",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Sparks/Emitters/NE_Sparks",
+                         "Class":  "NiagaraEmitter",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Sparks/NS_Spark_Burst",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/FX_Weapons/Trails/NS_RocketTrail",
+                         "Class":  "NiagaraSystem",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/MPC_NiagaraExamples",
+                         "Class":  "MaterialParameterCollection",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_ExplosionFlare",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_ExplosionRoil_8x8",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_Explosion_Decal",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_Explosion_Decal_Frame0",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_Pebbles",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_RocketFlareCore",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_RocketTrail_8x8",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_SimpleDebris",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_SmokePuffLight_8x8",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MI_Sparks",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MasterMaterials/M_BrightCore",
+                         "Class":  "Material",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MasterMaterials/M_Decal_SubUV",
+                         "Class":  "Material",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MasterMaterials/M_Flare",
+                         "Class":  "Material",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MasterMaterials/M_Pebbles",
+                         "Class":  "Material",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MasterMaterials/M_Quixel_Simple",
+                         "Class":  "Material",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MasterMaterials/M_SimpleDebris",
+                         "Class":  "Material",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MasterMaterials/M_SmokeAndFire_Sprites",
+                         "Class":  "Material",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MasterMaterials/M_Sparks",
+                         "Class":  "Material",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MaterialFunctions/MF_DecalNormalFade",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MaterialFunctions/MF_ExposureCompensation",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MaterialFunctions/MF_FastSphereNormal",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Materials/MaterialFunctions/MF_MotionStretchSpark",
+                         "Class":  "MaterialFunction",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/NPC_NiagaraExamples",
+                         "Class":  "NiagaraParameterCollection",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1iccejw/MI_Concrete_Rubble_uc1iccejw_1K",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1iccejw/T_ConcreteRubble_uc1iccejw_1K_DpR",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1iccejw/T_Concrete_Rubble_uc1iccejw_1K_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1iccejw/T_Concrete_Rubble_uc1iccejw_1K_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1jagbjw/MI_Concrete_Rubble_uc1jagbjw_1K",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1jagbjw/T_ConcreteRubble_uc1jagbjw_1K_DpR",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1jagbjw/T_Concrete_Rubble_uc1jagbjw_1K_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1jagbjw/T_Concrete_Rubble_uc1jagbjw_1K_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1jagnjw/MI_Concrete_Rubble_uc1jagnjw_1K",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1jagnjw/T_ConcreteRubble_uc1jagnjw_1K_DpR",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1jagnjw/T_Concrete_Rubble_uc1jagnjw_1K_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Concrete_Rubble_uc1jagnjw/T_Concrete_Rubble_uc1jagnjw_1K_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Rock_shopk/MI_Rock_shopk_2K",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Rock_shopk/T_Rock_shopk_2K_D",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Rock_shopk/T_Rock_shopk_2K_DpR",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/Rock_shopk/T_Rock_shopk_2K_N",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/S_Concrete_Rubble_uc1iccejw",
+                         "Class":  "StaticMesh",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/S_Concrete_Rubble_uc1jagbjw",
+                         "Class":  "StaticMesh",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/S_Concrete_Rubble_uc1jagnjw",
+                         "Class":  "StaticMesh",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/StaticMesh/S_Rock_shopk",
+                         "Class":  "StaticMesh",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/ColorCurves/Atlas_FXColorCurves",
+                         "Class":  "CurveLinearColorAtlas",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/ColorCurves/EmissiveColorCurve",
+                         "Class":  "CurveLinearColor",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/Decals/ExplosionDecalMasks",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/Flares/LensFlare_01",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/Noise/T_Hermite2Noise_CenteredTiling",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/Sprites/T_ExplosionRoil_EOO_Loop",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/Sprites/T_ExplosionRoil_Normals_Loop",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/Sprites/T_SmokePuffLight_EOO_Loop",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/Sprites/T_SmokePuffLight_Normals_Loop",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/Utils/BaseEOO",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/NiagaraExamples/Textures/Utils/BaseNormal",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:NiagaraExamples"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/Realistic_Starter_VFX_Pack_Vol2/Materials/M_Glow_C",
+                         "Class":  "Material",
+                         "Source":  "Fab:RealisticStarterVFX2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/Realistic_Starter_VFX_Pack_Vol2/Materials/M_Glow_C_Inst",
+                         "Class":  "MaterialInstanceConstant",
+                         "Source":  "Fab:RealisticStarterVFX2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/Realistic_Starter_VFX_Pack_Vol2/Particles/Sparks/P_Embers_A",
+                         "Class":  "ParticleSystem",
+                         "Source":  "Fab:RealisticStarterVFX2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/Realistic_Starter_VFX_Pack_Vol2/Textures/T_Flare_A",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:RealisticStarterVFX2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/Realistic_Starter_VFX_Pack_Vol2/Textures/T_Spark_B",
+                         "Class":  "Texture2D",
+                         "Source":  "Fab:RealisticStarterVFX2"
+                     },
+                     {
+                         "Package":  "/Other5Combat/Fab/Realistic_Starter_VFX_Pack_Vol2/Vectorfields/VectorField_B",
+                         "Class":  "VectorFieldStatic",
+                         "Source":  "Fab:RealisticStarterVFX2"
+                     }
+                 ]
 }
